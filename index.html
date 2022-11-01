@@ -8,26 +8,30 @@
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-    
+  <div id="#particles-js">
+
 <!-- header section starts  -->
 <header>
    
     <div id="menu-bars" class="fas fa-bars"></div>
+    <div class="imglogo"><img src="./images/kedir-logo.png" alt=""></div>
     <div class="wrap">
-    <nav class="navbar">
+    
+    <div class="navbar">
         <a href="#home">home</a>
         <a href="#about">about</a>
         <a href="#services">services</a>
-        <a href="#portfolio">portfolio</a>
-        <a href="#contact">contact</a>
-    </nav>
+        <a href="#portfolio">portfolio</a> 
+    </div>
+  
 </div>
+<div class="con"> <a href="#contact">contact</a></div>
 </header>
 
 <!-- header section ends -->
@@ -38,8 +42,9 @@
 
     <div id="particles-js"></div>
 
-    <div class="content">
-        <img class="tilt" src="images/p.png" alt="">
+    <div class="content ">
+        <div class="blob"><img class="tilt" src="images/p.jpg" alt=""></div>
+        
         <h3> Kedir <span>Nasir</span> </h3>
         <p> i am a <span class="typing-text"> front end developer </span> </p>
         <a href="#about" class="btn">about me</a>
@@ -57,13 +62,9 @@
 
     <div class="row">
 
-        <div class="image">
-            <img class="tilt" src="images/2.jpg" alt="">
-        </div>
-
         <div class="content">
             <h3> my name is <span> kedir nasir </span> </h3>
-            <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad debitis, dolorem omnis dolorum non provident distinctio inventore culpa in, nam eligendi quos modi vel aliquid blanditiis velit natus voluptatem deleniti.</p>
+            <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam laudantium aliquam, suscipit vitae fugit iure et, fuga at nobis nam sapiente asperiores placeat. Unde deleniti consequatur quasi temporibus, aliquam similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad debitis, dolorem omnis dolorum non provident distinctio inventore culpa in, nam eligendi quos modi vel aliquid blanditiis velit natus voluptatem deleniti.</p>
             <div class="box-container">
                 <div class="box">
                     <p> <span> age: </span> 25 </p>
@@ -73,10 +74,10 @@
                 <div class="box">
                     <p> <span> language : </span> Amharic / english </p>
                     <p> <span> phone : </span> +123-456-7890 </p>
-                    <p> <span> email : </span> kedir.nasir.mohammed@gmail.com </p>
+                    <p> <span> email : </span>kedir.nasir.mohammed@gmail.com</p>
                 </div>
             </div>
-            <a href="#" class="btn">download CV</a>
+            <a href="./images/KedirNasirCV.pdf" class="btn" target="_blank" download="cv">download CV</a>
         </div>
 
     </div>
@@ -90,30 +91,12 @@
 <section class="services" id="services">
 
     <h1 class="heading"> <span> my </span> services </h1>
-
+<div class="glass">
     <div class="box-container">
 
         <div class="box tilt">
             <i class="fas fa-code"></i>
             <h3>web development</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, quidem.</p>
-        </div>
-
-        <div class="box tilt">
-            <i class="fas fa-paint-brush"></i>
-            <h3>graphic design</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, quidem.</p>
-        </div>
-
-        <div class="box tilt">
-            <i class="fas fa-bullhorn"></i>
-            <h3>seo marketing</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, quidem.</p>
-        </div>
-
-        <div class="box tilt">
-            <i class="fas fa-envelope"></i>
-            <h3>email marketing</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, quidem.</p>
         </div>
 
@@ -130,7 +113,7 @@
         </div>
 
     </div>
-
+</div>
 </section>
 
 <!-- services section ends -->
@@ -138,56 +121,76 @@
 <!-- portfolio section starts  -->
 
 <section class="portfolio" id="portfolio">
-
     <h1 class="heading"> <span> my </span> portfolio </h1>
-
-    <div class="box-container">
-
-        <div class="box tilt">
-            <img src="images/img-1.jpg" alt="">
-            <div class="content">
-                <a href="#" class="btn">learn more</a>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/netflix.jpeg" class="d-block w-100 ">
+            <div class="carousel-caption  d-none d-md-block">
+                <a href="./netflix-home-page-Clone/index.html" target="_blank" class="btn">visit page</a>
+              </div>
+            
+          </div>
+          <div class="carousel-item">
+            <img src="images/microsoft.jpg" class="d-block w-100" >
+            <div class="carousel-caption d-none d-md-block">
+                <a href="./Microsoft-clone/index.html" target="_blank" class="btn">visit page</a>
+              </div>
+            
+            
+          </div>
+          <div class="carousel-item">
+            <img src="images/img-3.jpg" class="d-block w-100" >
+            <div class="carousel-caption d-none d-md-block">
+                <a href="./netflix-home-page-Clone/index.html" target="_blank" class="btn">visit page</a>
+              </div>
+            
+             </div>
+            <div class="carousel-item">
+                <img src="images/img-4.jpg" class="d-block w-100" >
+                <div class="carousel-caption d-none d-md-block">
+                    <a href="./netflix-home-page-Clone/index.html" target="_blank" class="btn">visit page</a>
+                  </div>
+                
+            </div>
+              
+              <div class="carousel-item">
+                <img src="images/img-5.jpg" class="d-block w-100" >
+                <div class="carousel-caption d-none d-md-block">
+                    <a href="./netflix-home-page-Clone/index.html" target="_blank" class="btn">visit page</a>
+                  </div>
+                
+              </div>
+              <div class="carousel-item">
+                <img src="images/img-6.jpg" class="d-block w-100" >
+                <div class="carousel-caption d-none d-md-block">
+                    <a href="./netflix-home-page-Clone/index.html" target="_blank" class="btn">visit page</a>
+                  </div>
+                
             </div>
         </div>
 
-        <div class="box tilt">
-            <img src="images/img-2.jpg" alt="">
-            <div class="content">
-                <a href="#" class="btn">learn more</a>
-            </div>
-        </div>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+  
+          </div>
 
-        <div class="box tilt">
-            <img src="images/img-3.jpg" alt="">
-            <div class="content">
-                <a href="#" class="btn">learn more</a>
-            </div>
-        </div>
-
-        <div class="box tilt">
-            <img src="images/img-4.jpg" alt="">
-            <div class="content">
-                <a href="#" class="btn">learn more</a>
-            </div>
-        </div>
-
-        <div class="box tilt">
-            <img src="images/img-5.jpg" alt="">
-            <div class="content">
-                <a href="#" class="btn">learn more</a>
-            </div>
-        </div>
-
-        <div class="box tilt">
-            <img src="images/img-6.jpg" alt="">
-            <div class="content">
-                <a href="#" class="btn">learn more</a>
-            </div>
-        </div>
-
-    </div>
-    
-</section>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> 
+    </section>
 
 <!-- portfolio section ends -->
 
@@ -200,21 +203,21 @@
     <div class="row">
 
         <div class="image">
-            <img class="tilt" src="images/contact-img.svg" alt="">
+            <img class="tilt" src="images/contact-us.svg" alt="">
         </div>
 
-        <form action="">
+        <form action="post" action="send-email.php">
 
             <div class="inputBox">
-                <input type="text" placeholder="name">
-                <input type="email" placeholder="email">
+                <input type="text" id="name" placeholder="name">
+                <input type="email" id="email" placeholder="email">
             </div>
 
-            <input type="text" placeholder="subject" class="box">
+            <input type="text" placeholder="subject" id="subject" class="box">
 
-            <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+            <textarea placeholder="message" name="" id="message" cols="30" rows="10"></textarea>
 
-            <input type="submit" class="btn" value="send message">
+            <input type="submit" id="btn" class="btn" value="send message">
 
         </form>
 
@@ -226,11 +229,40 @@
 
 <!-- footer section  -->
 
-<div class="footer"> made with ❤ by <span> mr. Kedir Nasir </span> | all rights reserved! </div>
+<div class="footer"> made with ❤ by <span> mr. Kedir Nasir </span> | all rights reserved! 
+<div>
+    <a href="https://www.instagram.com/kedir_n21/?hl=en"target="_blank" ><img class="svg" src="./images/instagram.svg"></a>
+    <a href="https://twitter.com/kedkna"target="_blank" ><img class="svg" src="./images/twitter.svg"></a>
+    <a href="https://t.me/kna21"target="_blank" ><img class="svg" src="./images/telegram.svg"></a>
+
+</div></div></div> 
 
 
 <!-- javascript part  -->
-
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script>
+  var btn = document.getElementById('btn');
+  btn.addEventListener('click',function(e){
+    e.preventDefault()
+    var name =document.getElementById('name').value;
+    var email =document.getElementById('email').value;
+    var subject =document.getElementById('subject').value;
+    var message =document.getElementById('message').value;
+    var body = 'name:' +name + '<br/> email:'+email +'<br/> subject' +subject + '<br/> message' +message;
+    Email.send({
+    Host : "smtp.gmail.com",
+    Username : "kedir.nasir.mohammed@gmail.com",
+    Password : "eiazuuqxpqaswwhl",
+    To : 'kedir.nasir.mohammed@gmail.com',
+    From : email,
+    Subject : subject,
+    Body : body
+}).then(
+  message => alert(message)
+);
+  })
+</script>
 <!-- typed.js link  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 
@@ -264,9 +296,10 @@ var typed = new Typed('.typing-text', {
 
 VanillaTilt.init(document.querySelectorAll('.tilt'),{
     max:25
-});
-
+});</script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+ <scrip src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </script>
-
 </body>
-</html>
+<html>
